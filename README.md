@@ -32,13 +32,13 @@ grunt.initConfig({
 			hashFunction: function(source, encoding){ // default is md5
 				return require('crypto').createHash('sha1').update(source, encoding).digest('hex');
 			},
-      footer: '<%= grunt.template.today("yyyy-mm-dd") %> - <%= commenthash.value %>', // Comment text template
-      banner: false // Can be true, false, a string or a function that returns a template/boolean. Function retrieves some metadata.
+      		footer: '<%= grunt.template.today("yyyy-mm-dd") %> - <%= commenthash.value %>', // Comment text template
+      		banner: false // Can be true, false, a string or a function that returns a template/boolean. Function retrieves some metadata.
 		},
-    expand: true,
-    cwd: 'src/',
-    src: '**/*.js',
-    dest: dist/'
+    	expand: true,
+    	cwd: 'src/',
+    	src: '**/*.js',
+    	dest: 'dist/'
 	}
 });
 grunt.loadNpmTasks('grunt-commenthash');

@@ -102,7 +102,7 @@ module.exports = function (grunt) {
         comment = '/*' + commentText + '*/';
         break;
       case '.js':
-        comment = '/*!' + commentText + '*/';
+        comment = '/*' + commentText + '*/';
 
         // If it's a footer then insert comment before sourceMappingURL
         if(options.beforeSourceMap && insertIndex === -1) {
