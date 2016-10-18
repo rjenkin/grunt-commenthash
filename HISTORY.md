@@ -1,3 +1,10 @@
+0.0.9 / 2016-10-14
+==================
+
+  * Removed exclamation mark from Javascript comment block
+  * Fixed indentation in README.md
+
+
 0.0.7 / 2014-05-27 
 ==================
 
